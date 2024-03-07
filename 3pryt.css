@@ -1,0 +1,7 @@
+#dimensionar{
+  position: relative; /* Asegura que el ::before esté posicionado correctamente */
+  width: 1500px;
+  height: 550px;
+  overflow: hidden; /* Evita que el ::before se desborde */
+  
+}

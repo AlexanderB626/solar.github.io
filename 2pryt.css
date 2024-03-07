@@ -1,0 +1,27 @@
+#energia{
+    position: relative; /* Asegura que el ::before esté posicionado correctamente */
+    width: 1500px;
+    height: 550px;
+    overflow: hidden; /* Evita que el ::before se desborde */
+    
+}
+
+#energia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px; /* Ancho del fondo */
+    height: 800px; /* Altura del fondo */
+    background-image: url(./imagen/Recibo.jpg); /* Imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    margin: 2px;
+}
+
+#parrafo1{
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 20px;
+}
