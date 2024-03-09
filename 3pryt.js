@@ -11,17 +11,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Obtener el valor del campo monto_energia
         const montoEnergia = parseFloat(document.getElementById('monto_energia').value);
-        
 
         // Mostrar el valor en el div "resultado" dentro de "energia"
-        const resultadoDiv = document.getElementById('resultado');
-        resultadoDiv.textContent = `Monto de energía diario: ${(montoEnergia/30)*1000} Wh`;
+        const resultadoE = document.getElementById('resultado');
+        resultadoE.textContent = `Monto de energía diario: ${(montoEnergia / 30) * 1000} Wh`;
 
         // Realizar operaciones matemáticas y mostrar resultados en el div "dimensionarResultado" dentro de "dimensionar"
-        const resultadoOperacion1 = ((((montoEnergia/30)*1000) * fs)/(volt*PD))/(300); // Ejemplo de operación
-        const dimensionarResultadoDiv = document.getElementById('dimensionarResultado');
-        dimensionarResultadoDiv.textContent = `Cantidad de baterias de 12v: ${resultadoOperacion1} bat de 300Ah`;
+        //r1: 
+        const r1 = ((((montoEnergia / 30) * 1000) * fs) / (volt * PD)) / 300; // Ejemplo de operación
+        const r2 = document.getElementById('dimensionarResultado');
+        r2.textContent = `Cantidad de baterias de 12v: ${r1} bat de 300Ah`;
 
+      // Realizar operaciones adicionales utilizando el valor de r2
+      const r3 = r2 * 2; // Ejemplo de operación con r2
+      const r4 = r1 + 10; // Otro ejemplo de operación con r2
+
+      // Mostrar los resultados adicionales
+      const r3Div = document.getElementById('r3');
+      r3Div.textContent = `Resultado de operación con r2: ${r3}`;
+
+      const r4Div = document.getElementById('r4');
+      r4Div.textContent = `Otro resultado de operación con r2: ${r4}`;
         
     });
 });

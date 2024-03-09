@@ -5,3 +5,14 @@
   overflow: hidden; /* Evita que el ::before se desborde */
   
 }
+
+.resultado {
+  border: 2px solid #ddd; /* Borde de 2px sólido gris */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno */
+  margin-bottom: 20px; /* Espacio entre cada cuadro */
+}
+
+.resultado.resaltado {
+  border-color: green; /* Color del borde resaltado */
+}

@@ -26,7 +26,7 @@ function obtenerFrasePorTipo(tipo) {
         case 'ventajas':
             return 'Las ventajas de los sistemas fotovoltaicos, es que ofrecen una energía limpia y renovable, reduciendo nuestra dependencia de combustibles fósiles y contribuyendo a un futuro más sostenible y respetuoso con el medio ambiente. unque la instalación inicial puede ser costosa, a largo plazo, los sistemas fotovoltaicos pueden generar ahorros significativos en las facturas de energía al proporcionar electricidad gratuita o a bajo costo durante su vida útil, que suele ser de varias décadas.';
         case 'informacion':
-            return 'La energia fotovoltaica se utiliza con el fin de economizar tu consumo electrico y ayudar, sin embargo esta energia se divide en 3 tipos el sistema off grid, el sistema on grid y el sistema hibrido; en esta ocasión trabajaremos con el sistema off grid: Este sistema es un kit fotovoltaico conectado 100% a baterias, este arreglo de baterias debe ser suficiente para cubrir sus necesidades energeticas. ';
+            return 'La energia fotovoltaica se utiliza con el fin de economizar tu consumo electrico y ayudar, sin embargo esta energia se divide en 3 tipos el sistema off grid, el sistema on grid y el sistema hibrido; en esta ocasión trabajaremos con el sistema off grid: Este sistema es un kit fotovoltaico conectado 100% a baterias, este arreglo de baterias debe ser suficiente para cubrir sus necesidades energeticas. A continuación mostraremos arreglos fotovoltaicos en 12, 24 y 48v, estos arreglos pueden brindar una gran ventaja en arreglos fotovoltaicos.';
         default:
             return '';
     }
